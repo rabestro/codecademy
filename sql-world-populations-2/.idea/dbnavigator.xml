@@ -24,27 +24,28 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="dc97ecb3-e673-4636-9282-0a2d980a2751">
+      <connection connection-id="cda5d77e-f5bd-41f6-9bf7-5de9b2055c70">
         <schema name="main" object-types="table, column, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="dc97ecb3-e673-4636-9282-0a2d980a2751">
-      <console name="World Populations" type="STANDARD" schema="" session="Main" />
+    <connection id="cda5d77e-f5bd-41f6-9bf7-5de9b2055c70">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="dc97ecb3-e673-4636-9282-0a2d980a2751" />
+    <connection id="cda5d77e-f5bd-41f6-9bf7-5de9b2055c70" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/population_queries.sql" connection-id="dc97ecb3-e673-4636-9282-0a2d980a2751" session-id="MAIN" current-schema="" />
+    <mapping file-url="file://$PROJECT_DIR$/population_queries.sql" connection-id="cda5d77e-f5bd-41f6-9bf7-5de9b2055c70" session-id="MAIN" current-schema="main" />
+    <mapping file-url="file://$PROJECT_DIR$/codecademy.sql" connection-id="cda5d77e-f5bd-41f6-9bf7-5de9b2055c70" session-id="MAIN" current-schema="main" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -66,10 +67,10 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="dc97ecb3-e673-4636-9282-0a2d980a2751" active="true">
+      <connection id="cda5d77e-f5bd-41f6-9bf7-5de9b2055c70" active="true">
         <database>
-          <name value="World Populations" />
-          <description value="World Populations SQL Practice" />
+          <name value="Codecademy" />
+          <description value="World Populations" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
           <database-version value="3.21" />
