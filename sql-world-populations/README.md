@@ -1,4 +1,4 @@
-# World Populations SQL Practice II
+# World Populations SQL Practice
 
 ## Overview
 
@@ -8,28 +8,21 @@ This project is slightly different than others you have encountered thus far on 
 
 You’ll work with a dataset of world population by country data from recent years. You’ll write queries to retrieve interesting data and answer a set of specific questions.
 
-## Project Requirements
+### Prerequisites
+
+In order to complete this project, you should have completed the Learn SQL Manipulation and Learn SQL Queries lessons.
+
+### Project Requirements
 
 In this project, you’ll answer questions using a database of world population by country.
 
-There are two tables:
-
-### countries
-
-| Column |	Type |	Notes |
-|---|---|---|
-| id |	INTEGER |	Primary Key |
-| name | 	TEXT | 	
-| continent | 	TEXT | 	
-
-### population_years 
+The schema of the database is:
 
 | Column | 	Type | 	Notes
-|---|---|---|
-| id | 	INTEGER | 	Primary Key
+|---|---|---
+| country | 	STRING | 	
 | population | 	NUMBER | 	(in millions)
 | year | 	NUMBER | 	
-| country_id | 	INTEGER | 	Foreign Key
 
 Refer to this schema as you write queries to the database.
 
