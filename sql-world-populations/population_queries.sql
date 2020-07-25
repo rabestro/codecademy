@@ -51,7 +51,7 @@ where country_id = (
 
 -- How many countries have the word "The" in their name?
 
-select count(id)
+select count(id) as "Number of countries with word 'The'"
 from countries
 where name like '%The%';
 
