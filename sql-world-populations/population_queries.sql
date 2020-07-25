@@ -6,8 +6,11 @@ select count(*) from countries;
 
 select sum(population) as "Total population of Oceania in 2005"
 from population_years
-where year = 2005
-    and country_id in (select id from countries where continent = 'Oceania');
+where year = 2005 and country_id in (
+    select id
+    from countries
+    where continent = 'Oceania'
+);
 
 -- What is the average population of countries in South America in 2003?
 
@@ -33,12 +36,25 @@ where id = (
 
 -- What is the average population of Poland during the time period covered by this dataset?
 
-
+select avg(population) as "Average population of Poland"
+from population_years
+where country_id = (
+    select id
+    from countries
+    where name = 'Poland'
+);
 
 -- How many countries have the word "The" in their name?
 
-
+select count(id)
+from countries
+where name like '%The%';
 
 -- What was the total population of each continent in 2010?
 
-
+select continent, round(sum(population),2) as "Total population"
+from population_years
+join countries
+on country_id = countries.id
+where year = 2010
+group by continent;
