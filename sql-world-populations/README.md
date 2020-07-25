@@ -13,13 +13,19 @@ You’ll work with a dataset of world population by country data from recent yea
 In this project, you’ll answer questions using a database of world population by country.
 
 There are two tables:
+
 ### countries
+
 | Column |	Type |	Notes |
+|---|---|---|
 | id |	INTEGER |	Primary Key |
 | name | 	TEXT | 	
 | continent | 	TEXT | 	
+
 ### population_years 
- || Column | 	Type | 	Notes
+
+| Column | 	Type | 	Notes
+|---|---|---|
 | id | 	INTEGER | 	Primary Key
 | population | 	NUMBER | 	(in millions)
 | year | 	NUMBER | 	
