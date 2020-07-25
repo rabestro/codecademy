@@ -1,6 +1,8 @@
 -- How many entries in the database are from Africa?
 
-select count(*) from countries;
+select count(*) as "Countries in Africa"
+from countries
+where continent = 'Africa';
 
 -- What was the total population of Oceania in 2005?
 
@@ -16,8 +18,11 @@ where year = 2005 and country_id in (
 
 select avg(population) as "Average population of countries in South America in 2003"
 from population_years
-where year = 2003
-    and country_id in (select id from countries where continent = 'South America');
+where year = 2003 and country_id in (
+    select id
+    from countries
+    where continent = 'South America'
+);
 
 -- What country had the smallest population in 2007?
 
