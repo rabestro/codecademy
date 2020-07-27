@@ -48,7 +48,6 @@ status_aggregate AS
 FROM status
 GROUP BY month)
 -- add your churn calculation here
-
 SELECT month, 1.0 *
    canceled / active AS churn_rate 
 FROM status_aggregate;
