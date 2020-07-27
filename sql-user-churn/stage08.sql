@@ -5,6 +5,11 @@
 -- This provides a list of months, with their corresponding number of active users at 
 -- the beginning of the month and the number of those users who cancel during the month.
 
+-- Add a status_aggregate temporary table. This table should have the following columns:
+-- month - selected from the status table
+-- active - the SUM() of active users for this month
+-- canceled - the SUM() of canceled users for this month
+
 WITH months AS
 (SELECT
   '2017-01-01' as first_day,
